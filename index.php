@@ -1,6 +1,6 @@
 <?php
 
-function fizzBuzzFor ($x): void 
+function fizzBuzzFor($x): void
 {
     echo '<br>';
 
@@ -27,26 +27,29 @@ function fizzBuzzFor ($x): void
         // x
         echo $i . '<br>';
     }
-    
 }
 // fizzBuzzFor(35);
 
 
-$i = 1; 
-echo '<br>';
-while ($i <= 30) {
-    switch ($i) {
-    case ($i / 15 >= 1 && $i % 15 == 0):
-        echo "FizzBuzz" . '<br>';
-        break;
-    case ($i % 3 == 0 && $i / 3 >=1):
-        echo "Fizz" . '<br>';
-        break;
-    case ($i % 5 == 0 && $i / 5 >=1):
-        echo "Buzz" . '<br>';
-        break;
-    default:
-        echo $i . '<br>';
+function fizzBuzzWhile($x)
+{
+    $i = 1;
+    echo '<br>';
+    while ($i <= $x) {
+        switch ($i) {
+            case ($i / 15 >= 1 && $i % 15 == 0):
+                echo "FizzBuzz" . '<br>';
+                break;
+                case ($i % 3 == 0 && $i / 3 >=1):
+                    echo "Fizz" . '<br>';
+                    break;
+                    case ($i % 5 == 0 && $i / 5 >=1):
+                        echo "Buzz" . '<br>';
+                        break;
+                        default:
+                        echo $i . '<br>';
+                    }
+        $i++;
+    }
 }
-    $i++;
-}
+// fizzBuzzWhile(35);
